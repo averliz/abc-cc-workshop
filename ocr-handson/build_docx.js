@@ -9,7 +9,7 @@ const {
   ExternalHyperlink, TabStopType, TabStopPosition,
   TableOfContents, HeadingLevel, BorderStyle, WidthType, ShadingType,
   PageNumber, PageBreak, SectionType, VerticalAlign
-} = require(path.join('C:\\Users\\UserJ\\AppData\\Roaming\\npm\\node_modules', 'docx'));
+} = require('docx');
 
 // ---------- Helpers ----------
 
