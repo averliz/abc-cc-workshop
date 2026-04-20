@@ -1,7 +1,37 @@
+import { Layout } from './components/layout/Layout';
+import { useDashboardStore } from './stores/dashboard';
+import { useWebSocket } from './hooks/useWebSocket';
+import { useItems } from './hooks/useItems';
+import { useStats } from './hooks/useStats';
+
+function DashboardView() {
+  return <div className="text-gray-400">Dashboard widgets coming next...</div>;
+}
+
+function TimelineView() {
+  return <div className="text-gray-400">Timeline view coming next...</div>;
+}
+
+function SettingsView() {
+  return <div className="text-gray-400">Settings coming next...</div>;
+}
+
+const VIEWS = {
+  dashboard: DashboardView,
+  timeline: TimelineView,
+  settings: SettingsView,
+};
+
 export function App() {
+  useWebSocket();
+  useItems();
+  useStats();
+  const { activeView } = useDashboardStore();
+  const View = VIEWS[activeView];
+
   return (
-    <div className="min-h-screen bg-surface-900 text-gray-100 flex items-center justify-center">
-      <h1 className="text-2xl font-bold">OSINT Monitor</h1>
-    </div>
+    <Layout>
+      <View />
+    </Layout>
   );
 }
