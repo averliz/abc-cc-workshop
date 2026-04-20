@@ -1,17 +1,11 @@
 import { Layout } from './components/layout/Layout';
+import { DashboardView } from './components/dashboard/DashboardView';
 import { TimelineView } from './components/timeline/TimelineView';
+import { SettingsView } from './components/settings/SettingsView';
 import { useDashboardStore } from './stores/dashboard';
 import { useWebSocket } from './hooks/useWebSocket';
 import { useItems } from './hooks/useItems';
 import { useStats } from './hooks/useStats';
-
-function DashboardView() {
-  return <div className="text-gray-400">Dashboard widgets coming next...</div>;
-}
-
-function SettingsView() {
-  return <div className="text-gray-400">Settings coming next...</div>;
-}
 
 const VIEWS = {
   dashboard: DashboardView,
