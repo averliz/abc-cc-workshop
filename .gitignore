@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environments / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Build artifacts
+unpacked/
+*.pdf
+page_*.png
