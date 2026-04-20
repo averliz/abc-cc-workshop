@@ -1,4 +1,5 @@
 import { Layout } from './components/layout/Layout';
+import { TimelineView } from './components/timeline/TimelineView';
 import { useDashboardStore } from './stores/dashboard';
 import { useWebSocket } from './hooks/useWebSocket';
 import { useItems } from './hooks/useItems';
@@ -6,10 +7,6 @@ import { useStats } from './hooks/useStats';
 
 function DashboardView() {
   return <div className="text-gray-400">Dashboard widgets coming next...</div>;
-}
-
-function TimelineView() {
-  return <div className="text-gray-400">Timeline view coming next...</div>;
 }
 
 function SettingsView() {
