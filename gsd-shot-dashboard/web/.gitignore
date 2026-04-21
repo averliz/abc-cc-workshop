@@ -1,0 +1,23 @@
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Build artifacts
+tsconfig.tsbuildinfo
+/build
+
+# Dependencies
+/node_modules
+
+# Testing
+/coverage
+/playwright-report
+/test-results
+
+# Env
+.env*.local
+
+# Misc
+.DS_Store
+*.pem
