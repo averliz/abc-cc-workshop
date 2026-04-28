@@ -140,6 +140,8 @@ Use **Option B** for a longer session where you want to practice more of the BMA
 
 This option uses `bmad-quick-dev` to clarify intent, create a bounded spec, implement, review, and present one small feature.
 
+If you get stuck, use `reference/option-a-sample-run.md` as a troubleshooting reference. Do not open it first if you want the full exercise.
+
 ### A1. Generate Project Context
 
 Ask BMAD to inspect the existing app and create project context:
